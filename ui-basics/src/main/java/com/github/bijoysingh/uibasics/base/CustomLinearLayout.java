@@ -2,12 +2,8 @@ package com.github.bijoysingh.uibasics.base;
 
 import android.annotation.TargetApi;
 import android.content.Context;
-import android.content.res.TypedArray;
-import android.support.annotation.LayoutRes;
 import android.util.AttributeSet;
 import android.widget.LinearLayout;
-
-import com.github.bijoysingh.uibasics.R;
 
 /**
  * Custom Linear Layout for the merging
@@ -39,7 +35,7 @@ public abstract class CustomLinearLayout extends LinearLayout {
 
   protected abstract void init();
 
-  protected void setContentLayout(@LayoutRes Integer layout) {
+  protected void setContentLayout(Integer layout) {
     inflate(getContext(), layout, this);
   }
 

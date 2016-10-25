@@ -40,7 +40,7 @@ ext {
     siteUrl = 'https://github.com/BijoySingh/Android-UI-Basics'
     gitUrl = 'https://github.com/BijoySingh/Android-UI-Basics.git'
 
-    libraryVersion = '0.0.2'
+    libraryVersion = '0.0.3'
 
     developerId = 'bijoysingh693'
     developerName = 'Bijoy Singh Kochar'

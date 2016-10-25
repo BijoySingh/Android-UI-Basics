@@ -4,6 +4,11 @@ import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Color;
+import android.support.annotation.ColorRes;
+import android.support.annotation.DimenRes;
+import android.support.annotation.DrawableRes;
+import android.support.annotation.StringRes;
+import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -69,7 +74,7 @@ public class FigButton extends CustomLinearLayout {
   @Override
   public void init() {
     setContentLayout(R.layout.uibasics__fig_button);
-    setOrientation(VERTICAL);
+    setOrientation(HORIZONTAL);
 
     mIcon = (ImageView) findViewById(R.id.uibasics__icon);
     mLabel = (TextView) findViewById(R.id.uibasics__label);
@@ -81,5 +86,31 @@ public class FigButton extends CustomLinearLayout {
 
   public TextView getLabelView() {
     return mLabel;
+  }
+
+  public void setIconResource(@DrawableRes Integer drawableRes) {
+    mIcon.setImageResource(drawableRes);
+  }
+
+  public void setIconTint(@ColorRes Integer colorRes) {
+    mIcon.setColorFilter(ContextCompat.getColor(getContext(), colorRes));
+  }
+
+  public void setIconPadding(@DimenRes Integer dimenRes) {
+    int padding = (int) getContext().getResources().getDimension(dimenRes);
+    mIcon.setPadding(padding, padding, padding, padding);
+  }
+
+  public void setLabel(@StringRes Integer labelRes) {
+    mLabel.setText(labelRes);
+  }
+
+  public void setLabelColor(@ColorRes Integer textColorRes) {
+    mLabel.setTextColor(ContextCompat.getColor(getContext(), textColorRes));
+  }
+
+  public void setLabelSize(@DimenRes Integer dimenRes) {
+    int labelSize = (int) getContext().getResources().getDimension(dimenRes);
+    mLabel.setTextSize(labelSize);
   }
 }
