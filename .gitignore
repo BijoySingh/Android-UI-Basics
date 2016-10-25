@@ -1,5 +1,4 @@
 *.iml
-settings.gradle
 gradle.properties
 .gradle
 /local.properties
