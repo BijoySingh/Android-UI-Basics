@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+  <ImageView
+      android:id="@+id/uibasics__icon"
+      android:layout_width="@dimen/uibasics__default_icon"
+      android:layout_height="@dimen/uibasics__default_icon"
+      android:contentDescription="@string/uibasics__fig_icon"
+      />
+
+  <TextView
+      android:id="@+id/uibasics__label"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="@dimen/uibasics__default_text_size"
+      />
+
+</merge>

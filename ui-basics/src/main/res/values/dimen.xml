@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <dimen name="uibasics__default_icon">24dp</dimen>
+  <dimen name="uibasics__default_text_size">16sp</dimen>
+  <dimen name="uibasics__default_padding">16dp</dimen>
+  <dimen name="uibasics__default_small_padding">8dp</dimen>
+</resources>
