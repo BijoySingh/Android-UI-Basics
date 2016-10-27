@@ -45,8 +45,7 @@ public class FigButton extends CustomLinearLayout {
       mIcon.setColorFilter(typedArray.getColor(
           R.styleable.uibasics__FigButton_uibasics__icon_tint, Color.WHITE));
       int padding = (int) typedArray.getDimension(
-          R.styleable.uibasics__FigButton_uibasics__icon_padding,
-          context.getResources().getDimension(R.dimen.uibasics__default_padding));
+          R.styleable.uibasics__FigButton_uibasics__icon_padding, 0);
       mIcon.setPadding(padding, padding, padding, padding);
 
       // Sets the label for the fig

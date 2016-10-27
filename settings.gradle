@@ -1,1 +1,1 @@
-include ':ui-basics'
+include ':ui-basics', ':sample'
