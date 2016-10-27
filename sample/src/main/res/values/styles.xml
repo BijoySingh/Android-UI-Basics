@@ -8,4 +8,18 @@
     <item name="colorAccent">@color/colorAccent</item>
   </style>
 
+  <style name="Headline">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_marginStart">16dp</item>
+    <item name="android:textColor">@color/dark_tertiary_text</item>
+    <item name="android:textSize">12sp</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+
+  <style name="CustomFigTextView">
+    <item name="android:textStyle">bold|italic</item>
+    <item name="android:fontFamily">sans-serif-thin</item>
+  </style>
+
 </resources>

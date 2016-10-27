@@ -10,5 +10,6 @@
     <item name="iconTint">@color/fig_textview_icon_tint</item>
     <item name="textSize">@dimen/fig_textview_text_size</item>
     <item name="textColor">@color/fig_textview_icon_text_color</item>
+    <item name="iconTextGap">@dimen/fig_textview_icon_text_gap</item>
   </style>
 </resources>

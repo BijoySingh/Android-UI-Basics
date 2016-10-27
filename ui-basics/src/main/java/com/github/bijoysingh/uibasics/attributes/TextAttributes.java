@@ -6,6 +6,7 @@ import android.graphics.Color;
 import android.os.Build;
 import android.util.AttributeSet;
 import android.util.TypedValue;
+import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.github.bijoysingh.uibasics.R;
@@ -23,6 +24,12 @@ public class TextAttributes {
   private int textSizeStyleable;
   private int textColorStyleable;
   private int textStyleStyleable;
+  private int textPaddingStyleable;
+  private int textMarginStyleable;
+  private int textMarginStartStyleable;
+  private int textMarginEndStyleable;
+  private int textMarginTopStyleable;
+  private int textMarginBottomStyleable;
 
   public TextAttributes(Builder builder) {
     context = builder.context;
@@ -32,6 +39,12 @@ public class TextAttributes {
     textColorStyleable = builder.textColorStyleable;
     textSizeStyleable = builder.textSizeStyleable;
     textStyleStyleable = builder.textStyleStyleable;
+    textPaddingStyleable = builder.textPaddingStyleable;
+    textMarginStyleable = builder.textMarginStyleable;
+    textMarginStartStyleable = builder.textMarginStartStyleable;
+    textMarginEndStyleable = builder.textMarginEndStyleable;
+    textMarginTopStyleable = builder.textMarginTopStyleable;
+    textMarginBottomStyleable = builder.textMarginBottomStyleable;
   }
 
   public void set(TextView view) {
@@ -41,23 +54,59 @@ public class TextAttributes {
         0, 0);
 
     try {
-      // Sets the label for the fig
-      view.setText(typedArray.getText(textStyleable));
-      view.setTextSize(TypedValue.COMPLEX_UNIT_PX, typedArray.getDimension(
-          textSizeStyleable,
-          context.getResources().getDimension(R.dimen.default_text_size)));
-      view.setTextColor(typedArray.getColor(
-          textColorStyleable,
-          Color.WHITE));
-
-      // Set the style of the text
-      if (Build.VERSION.SDK_INT < 23) {
-        view.setTextAppearance(context, typedArray.getResourceId(
-            textStyleStyleable, 0));
-      } else {
-        view.setTextAppearance(typedArray.getResourceId(
-            textStyleStyleable, 0));
+      if (textStyleable != -1) {
+        // Sets the label for the fig
+        view.setText(typedArray.getText(textStyleable));
       }
+
+      if (textStyleStyleable != -1) {
+        // Set the style of the text
+        if (Build.VERSION.SDK_INT < 23) {
+          view.setTextAppearance(context, typedArray.getResourceId(
+              textStyleStyleable, 0));
+        } else {
+          view.setTextAppearance(typedArray.getResourceId(
+              textStyleStyleable, 0));
+        }
+      }
+
+      if (textSizeStyleable != -1) {
+        // Set the text size of the image
+        view.setTextSize(TypedValue.COMPLEX_UNIT_PX, typedArray.getDimension(
+            textSizeStyleable,
+            context.getResources().getDimension(R.dimen.default_text_size)));
+      }
+
+      if (textColorStyleable != -1) {
+        // Set the text color
+        view.setTextColor(typedArray.getColor(textColorStyleable, Color.WHITE));
+      }
+
+      if (textPaddingStyleable != -1) {
+        // Set the text padding
+        int padding = (int) typedArray.getDimension(textPaddingStyleable, 0);
+        view.setPadding(padding, padding, padding, padding);
+      }
+
+      // Set the text margin
+      int margin = textMarginStyleable != -1
+          ? (int) typedArray.getDimension(textMarginStyleable, 0)
+          : 0;
+      int marginStart = textMarginStartStyleable != -1
+          ? (int) typedArray.getDimension(textMarginStartStyleable, 0)
+          : margin;
+      int marginEnd = textMarginEndStyleable != -1
+          ? (int) typedArray.getDimension(textMarginEndStyleable, 0)
+          : margin;
+      int marginTop = textMarginTopStyleable != -1
+          ? (int) typedArray.getDimension(textMarginTopStyleable, 0)
+          : margin;
+      int marginBottom = textMarginBottomStyleable != -1
+          ? (int) typedArray.getDimension(textMarginBottomStyleable, 0)
+          : margin;
+      ViewGroup.MarginLayoutParams params = (ViewGroup.MarginLayoutParams) view.getLayoutParams();
+      params.setMargins(marginStart, marginTop, marginEnd, marginBottom);
+
     } finally {
       typedArray.recycle();
     }
@@ -67,10 +116,16 @@ public class TextAttributes {
     private Context context;
     private AttributeSet attributeSet;
     private int[] attrStyleable;
-    private int textStyleable;
-    private int textSizeStyleable;
-    private int textColorStyleable;
-    private int textStyleStyleable;
+    private int textStyleable = -1;
+    private int textSizeStyleable = -1;
+    private int textColorStyleable = -1;
+    private int textStyleStyleable = -1;
+    private int textPaddingStyleable = -1;
+    private int textMarginStyleable = -1;
+    private int textMarginStartStyleable = -1;
+    private int textMarginEndStyleable = -1;
+    private int textMarginTopStyleable = -1;
+    private int textMarginBottomStyleable = -1;
 
     public Builder setContext(Context context) {
       this.context = context;
@@ -104,6 +159,36 @@ public class TextAttributes {
 
     public Builder setTextStyleStyleable(int textStyleStyleable) {
       this.textStyleStyleable = textStyleStyleable;
+      return this;
+    }
+
+    public Builder setTextPaddingStyleable(int textPaddingStyleable) {
+      this.textPaddingStyleable = textPaddingStyleable;
+      return this;
+    }
+
+    public Builder setTextMarginStyleable(int textMarginStyleable) {
+      this.textMarginStyleable = textMarginStyleable;
+      return this;
+    }
+
+    public Builder setTextMarginBottomStyleable(int textMarginBottomStyleable) {
+      this.textMarginBottomStyleable = textMarginBottomStyleable;
+      return this;
+    }
+
+    public Builder setTextMarginTopStyleable(int textMarginTopStyleable) {
+      this.textMarginTopStyleable = textMarginTopStyleable;
+      return this;
+    }
+
+    public Builder setTextMarginEndStyleable(int textMarginEndStyleable) {
+      this.textMarginEndStyleable = textMarginEndStyleable;
+      return this;
+    }
+
+    public Builder setTextMarginStartStyleable(int textMarginStartStyleable) {
+      this.textMarginStartStyleable = textMarginStartStyleable;
       return this;
     }
 

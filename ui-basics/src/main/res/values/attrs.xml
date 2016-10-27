@@ -9,5 +9,6 @@
     <attr name="iconPadding" format="dimension"/>
     <attr name="iconSize" format="dimension"/>
     <attr name="iconTint" format="color"/>
+    <attr name="iconTextGap" format="dimension"/>
   </declare-styleable>
 </resources>

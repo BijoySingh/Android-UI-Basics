@@ -9,7 +9,6 @@ import android.support.annotation.DrawableRes;
 import android.support.annotation.StringRes;
 import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
-import android.view.Gravity;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -43,6 +42,7 @@ public class FigTextView extends CustomLinearLayout {
         .setIconSizeStyleable(R.styleable.FigTextView_iconSize)
         .setIconPaddingStyleable(R.styleable.FigTextView_iconPadding)
         .setIconTintStyleable(R.styleable.FigTextView_iconTint)
+        .setIconMarginEndStyleable(R.styleable.FigTextView_iconTextGap)
         .build()
         .set(mIcon);
 
@@ -71,7 +71,6 @@ public class FigTextView extends CustomLinearLayout {
   public void init() {
     setContentLayout(R.layout.fig_button);
     setOrientation(HORIZONTAL);
-    setGravity(Gravity.CENTER_VERTICAL);
 
     mIcon = (ImageView) findViewById(R.id.icon);
     mLabel = (TextView) findViewById(R.id.label);

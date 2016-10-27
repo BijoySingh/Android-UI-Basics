@@ -11,12 +11,31 @@
       android:layout_height="wrap_content"
       android:orientation="vertical">
 
+    <!-- FigTextView samples -->
     <com.github.bijoysingh.uibasics.views.FigTextView
+        style="@style/FigTextView_Medium"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        style="@style/FigTextView_Medium"
         fig:src="@drawable/ic_android_white_48dp"
-        fig:text="Button"
+        fig:text="@string/text_placeholder"
         />
+
+    <com.github.bijoysingh.uibasics.views.FigTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/canva_1_stem"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        fig:iconPadding="@dimen/fig_textview_icon_padding"
+        fig:iconSize="48dp"
+        fig:iconTextGap="@dimen/fig_textview_icon_text_gap"
+        fig:iconTint="@color/light_hint_text"
+        fig:src="@drawable/ic_android_white_48dp"
+        fig:text="@string/big_text_placeholder"
+        fig:textColor="@color/light_primary_text"
+        fig:textSize="18sp"
+        fig:textStyle="@style/CustomFigTextView"
+        />
+
   </LinearLayout>
 </ScrollView>

@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <dimen name="default_icon">24dp</dimen>
-  <dimen name="default_text_size">16sp</dimen>
+  <dimen name="default_text_size">14sp</dimen>
   <dimen name="default_padding">16dp</dimen>
   <dimen name="default_small_padding">8dp</dimen>
 
   <dimen name="fig_textview_icon">36dp</dimen>
   <dimen name="fig_textview_icon_padding">4dp</dimen>
   <dimen name="fig_textview_text_size">16sp</dimen>
+  <dimen name="fig_textview_icon_text_gap">16dp</dimen>
 </resources>
