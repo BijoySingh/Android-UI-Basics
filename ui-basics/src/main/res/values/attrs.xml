@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <declare-styleable name="uibasics__FigButton">
-    <attr name="uibasics__icon_padding" format="dimension"/>
-    <attr name="uibasics__icon_size" format="dimension"/>
-    <attr name="uibasics__icon_tint" format="color"/>
-    <attr name="uibasics__src" format="reference"/>
-    <attr name="uibasics__text_color" format="color"/>
-    <attr name="uibasics__text_size" format="dimension"/>
-    <attr name="uibasics__text" format="string"/>
+  <declare-styleable name="TextAttributes">
+    <attr name="text" format="string"/>
+    <attr name="textColor" format="color"/>
+    <attr name="textSize" format="dimension"/>
+    <attr name="textStyle" format="reference"/>
+  </declare-styleable>
+
+  <declare-styleable name="ImageAttributes">
+    <attr name="src" format="reference"/>
+    <attr name="iconPadding" format="dimension"/>
+    <attr name="iconSize" format="dimension"/>
+    <attr name="iconTint" format="color"/>
   </declare-styleable>
 </resources>
