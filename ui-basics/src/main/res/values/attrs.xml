@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <declare-styleable name="TextAttributes">
+  <declare-styleable name="FigTextView">
     <attr name="text" format="string"/>
     <attr name="textColor" format="color"/>
     <attr name="textSize" format="dimension"/>
     <attr name="textStyle" format="reference"/>
-  </declare-styleable>
-
-  <declare-styleable name="ImageAttributes">
     <attr name="src" format="reference"/>
     <attr name="iconPadding" format="dimension"/>
     <attr name="iconSize" format="dimension"/>

@@ -1,3 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+  <style name="FigTextViewDefault"></style>
+
+  <style name="FigTextView_Medium"
+         parent="FigTextViewDefault">
+    <item name="iconSize">@dimen/fig_textview_icon</item>
+    <item name="iconPadding">@dimen/fig_textview_icon_padding</item>
+    <item name="iconTint">@color/fig_textview_icon_tint</item>
+    <item name="textSize">@dimen/fig_textview_text_size</item>
+    <item name="textColor">@color/fig_textview_icon_text_color</item>
+  </style>
 </resources>

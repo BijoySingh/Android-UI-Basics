@@ -5,6 +5,7 @@ import android.content.res.TypedArray;
 import android.graphics.Color;
 import android.os.Build;
 import android.util.AttributeSet;
+import android.util.TypedValue;
 import android.widget.TextView;
 
 import com.github.bijoysingh.uibasics.R;
@@ -15,30 +16,99 @@ import com.github.bijoysingh.uibasics.R;
  */
 
 public class TextAttributes {
-  public static void set(Context context, AttributeSet attrs, TextView view) {
+  private Context context;
+  private AttributeSet attributeSet;
+  private int[] attrStyleable;
+  private int textStyleable;
+  private int textSizeStyleable;
+  private int textColorStyleable;
+  private int textStyleStyleable;
+
+  public TextAttributes(Builder builder) {
+    context = builder.context;
+    attributeSet = builder.attributeSet;
+    attrStyleable = builder.attrStyleable;
+    textStyleable = builder.textStyleable;
+    textColorStyleable = builder.textColorStyleable;
+    textSizeStyleable = builder.textSizeStyleable;
+    textStyleStyleable = builder.textStyleStyleable;
+  }
+
+  public void set(TextView view) {
     TypedArray typedArray = context.getTheme().obtainStyledAttributes(
-        attrs,
-        R.styleable.TextAttributes,
+        attributeSet,
+        attrStyleable,
         0, 0);
 
     try {
       // Sets the label for the fig
-      view.setText(typedArray.getText(R.styleable.TextAttributes_text));
-      view.setTextSize(typedArray.getDimension(
-          R.styleable.TextAttributes_textSize,
+      view.setText(typedArray.getText(textStyleable));
+      view.setTextSize(TypedValue.COMPLEX_UNIT_PX, typedArray.getDimension(
+          textSizeStyleable,
           context.getResources().getDimension(R.dimen.default_text_size)));
       view.setTextColor(typedArray.getColor(
-          R.styleable.TextAttributes_textColor,
+          textColorStyleable,
           Color.WHITE));
+
+      // Set the style of the text
       if (Build.VERSION.SDK_INT < 23) {
         view.setTextAppearance(context, typedArray.getResourceId(
-            R.styleable.TextAttributes_textStyle, 0));
+            textStyleStyleable, 0));
       } else {
         view.setTextAppearance(typedArray.getResourceId(
-            R.styleable.TextAttributes_textStyle, 0));
+            textStyleStyleable, 0));
       }
     } finally {
       typedArray.recycle();
+    }
+  }
+
+  public static class Builder {
+    private Context context;
+    private AttributeSet attributeSet;
+    private int[] attrStyleable;
+    private int textStyleable;
+    private int textSizeStyleable;
+    private int textColorStyleable;
+    private int textStyleStyleable;
+
+    public Builder setContext(Context context) {
+      this.context = context;
+      return this;
+    }
+
+    public Builder setAttributeSet(AttributeSet attributeSet) {
+      this.attributeSet = attributeSet;
+      return this;
+    }
+
+    public Builder setAttrStyleable(int[] attrStyleable) {
+      this.attrStyleable = attrStyleable;
+      return this;
+    }
+
+    public Builder setTextStyleable(int textStyleable) {
+      this.textStyleable = textStyleable;
+      return this;
+    }
+
+    public Builder setTextSizeStyleable(int textSizeStyleable) {
+      this.textSizeStyleable = textSizeStyleable;
+      return this;
+    }
+
+    public Builder setTextColorStyleable(int textColorStyleable) {
+      this.textColorStyleable = textColorStyleable;
+      return this;
+    }
+
+    public Builder setTextStyleStyleable(int textStyleStyleable) {
+      this.textStyleStyleable = textStyleStyleable;
+      return this;
+    }
+
+    public TextAttributes build() {
+      return new TextAttributes(this);
     }
   }
 }
