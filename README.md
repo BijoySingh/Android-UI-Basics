@@ -11,6 +11,7 @@ Color resources from the following sources
 ### FigTextView
 `ImageView` on the left of the `TextView`, with a lot more control than using `drawableLeft/Start`.
 
+![FigTextView](readme/FigTextView.png)
 ```xml
 <com.github.bijoysingh.uibasics.views.FigTextView
    android:layout_width="match_parent"
@@ -33,6 +34,7 @@ Color resources from the following sources
 ### FigLabelView
 `ImageView` on below the `TextView`, lot cleaner than putting LinearLayouts for this.
 
+![FigTextView](readme/FigLabelView.png)
 ```xml
 <com.github.bijoysingh.uibasics.views.FigLabelView
    android:layout_width="wrap_content"
@@ -55,6 +57,7 @@ Color resources from the following sources
 ### FigContentView
 `ImageView` next to a title `TextView` and a subtitle `TextView`.
 
+![FigTextView](readme/FigContentView.png)
 ```xml
 <com.github.bijoysingh.uibasics.views.FigContentView
     android:layout_width="wrap_content"
