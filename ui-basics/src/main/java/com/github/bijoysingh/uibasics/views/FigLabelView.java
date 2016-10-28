@@ -27,7 +27,7 @@ public class FigLabelView extends FigTextViewBase {
         .setContext(context)
         .setAttributeSet(attrs)
         .setAttrStyleable(R.styleable.FigTextViewBase)
-        .setSrcStyleable(R.styleable.FigTextViewBase_src)
+        .setSrcStyleable(R.styleable.FigTextViewBase_icon)
         .setIconSizeStyleable(R.styleable.FigTextViewBase_iconSize)
         .setIconPaddingStyleable(R.styleable.FigTextViewBase_iconPadding)
         .setIconTintStyleable(R.styleable.FigTextViewBase_iconTint)

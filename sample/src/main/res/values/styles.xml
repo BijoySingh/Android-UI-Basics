@@ -22,4 +22,17 @@
     <item name="android:fontFamily">sans-serif-thin</item>
   </style>
 
+  <style name="CustomFigLabelView">
+    <item name="android:textStyle">bold</item>
+    <item name="android:fontFamily">sans-serif-thin</item>
+  </style>
+
+  <style name="CustomFigContentViewTitle">
+    <item name="android:textColor">@color/dark_secondary_text</item>
+  </style>
+
+  <style name="CustomFigContentViewSubtitle">
+    <item name="android:textColor">@color/dark_tertiary_text</item>
+  </style>
+
 </resources>

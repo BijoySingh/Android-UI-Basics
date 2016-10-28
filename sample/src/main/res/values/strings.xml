@@ -7,6 +7,7 @@
   <string name="big_text_placeholder">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed dapibus lectus. Aenean tempor accumsan massa ut pharetra.</string>
   <string name="medium_text_placeholder">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed dapibus lectus.</string>
   <string name="text_placeholder">Lorem ipsum dolor</string>
+  <string name="tiny_text_placeholder">Lorem</string>
 
   <string name="date_placeholder">12 January 2016</string>
   <string name="date_location_placeholder">12 January 2016 &#183; New York</string>

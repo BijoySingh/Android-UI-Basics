@@ -6,10 +6,25 @@
     <attr name="textSize" format="dimension"/>
     <attr name="textPadding" format="dimension"/>
     <attr name="textStyle" format="reference"/>
-    <attr name="src" format="reference"/>
+
+    <attr name="icon" format="reference"/>
     <attr name="iconPadding" format="dimension"/>
     <attr name="iconSize" format="dimension"/>
     <attr name="iconTint" format="color"/>
     <attr name="iconTextGap" format="dimension"/>
+  </declare-styleable>
+
+  <declare-styleable name="FigContentView">
+    <attr name="title" format="string"/>
+    <attr name="titleColor" format="color"/>
+    <attr name="titleSize" format="dimension"/>
+    <attr name="titlePadding" format="dimension"/>
+    <attr name="titleStyle" format="reference"/>
+
+    <attr name="subtitle" format="string"/>
+    <attr name="subtitleColor" format="color"/>
+    <attr name="subtitleSize" format="dimension"/>
+    <attr name="subtitlePadding" format="dimension"/>
+    <attr name="subtitleStyle" format="reference"/>
   </declare-styleable>
 </resources>

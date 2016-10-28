@@ -11,14 +11,17 @@
       android:layout_height="wrap_content"
       android:orientation="vertical">
 
-    <!-- FigTextView samples -->
+    <include layout="@layout/seperator"/>
+
     <com.github.bijoysingh.uibasics.views.FigTextView
         style="@style/FigTextView_Medium"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        fig:src="@drawable/ic_android_white_48dp"
+        fig:icon="@drawable/ic_android_white_48dp"
         fig:text="@string/text_placeholder"
         />
+
+    <include layout="@layout/seperator"/>
 
     <com.github.bijoysingh.uibasics.views.FigTextView
         android:layout_width="match_parent"
@@ -30,22 +33,73 @@
         fig:iconSize="48dp"
         fig:iconTextGap="@dimen/fig_textview_icon_text_gap"
         fig:iconTint="@color/light_hint_text"
-        fig:src="@drawable/ic_android_white_48dp"
+        fig:icon="@drawable/ic_android_white_48dp"
         fig:text="@string/big_text_placeholder"
         fig:textColor="@color/light_primary_text"
         fig:textSize="18sp"
         fig:textStyle="@style/CustomFigTextView"
         />
 
-    <!-- FigLabelView samples -->
+    <include layout="@layout/seperator"/>
 
     <com.github.bijoysingh.uibasics.views.FigLabelView
         style="@style/FigLabelView_Medium"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        fig:src="@drawable/ic_android_white_48dp"
-        fig:text="@string/text_placeholder"
+        fig:icon="@drawable/ic_android_white_48dp"
+        fig:text="@string/tiny_text_placeholder"
         />
+
+    <include layout="@layout/seperator"/>
+
+    <com.github.bijoysingh.uibasics.views.FigLabelView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/canva_1_stem"
+        android:gravity="center"
+        android:padding="16dp"
+        fig:iconPadding="@dimen/fig_labelview_icon_padding"
+        fig:iconSize="48dp"
+        fig:iconTextGap="@dimen/fig_labelview_icon_text_gap"
+        fig:iconTint="@color/light_hint_text"
+        fig:icon="@drawable/ic_android_white_48dp"
+        fig:text="@string/tiny_text_placeholder"
+        fig:textColor="@color/light_primary_text"
+        fig:textSize="18sp"
+        fig:textStyle="@style/CustomFigLabelView"
+        />
+
+    <include layout="@layout/seperator"/>
+
+    <com.github.bijoysingh.uibasics.views.FigContentView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fig:icon="@drawable/ic_android_white_48dp"
+        fig:title="@string/text_placeholder"
+        fig:subtitle="@string/big_text_placeholder"
+        />
+
+    <include layout="@layout/seperator"/>
+
+    <com.github.bijoysingh.uibasics.views.FigContentView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#e1e1e1"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        fig:icon="@drawable/ic_android_white_48dp"
+        fig:iconSize="36dp"
+        fig:iconTextGap="16dp"
+        fig:iconTint="@color/canva_1_stem"
+        fig:title="@string/text_placeholder"
+        fig:titleSize="16sp"
+        fig:titleStyle="@style/CustomFigContentViewTitle"
+        fig:subtitle="@string/big_text_placeholder"
+        fig:subtitleSize="14sp"
+        fig:subtitleStyle="@style/CustomFigContentViewSubtitle"
+        />
+
+    <include layout="@layout/seperator"/>
 
   </LinearLayout>
 </ScrollView>

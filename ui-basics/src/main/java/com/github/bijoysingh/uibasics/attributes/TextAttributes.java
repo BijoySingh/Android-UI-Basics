@@ -79,7 +79,7 @@ public class TextAttributes {
 
       if (textColorStyleable != -1) {
         // Set the text color
-        view.setTextColor(typedArray.getColor(textColorStyleable, Color.WHITE));
+        view.setTextColor(typedArray.getColor(textColorStyleable, Color.BLACK));
       }
 
       if (textPaddingStyleable != -1) {

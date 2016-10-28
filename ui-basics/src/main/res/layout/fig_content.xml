@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+  <ImageView
+      android:id="@+id/icon"
+      android:layout_width="@dimen/default_icon"
+      android:layout_height="@dimen/default_icon"
+      android:contentDescription="@string/fig_icon"
+      />
+
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/default_text_size"
+        />
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/default_text_size"
+        />
+
+  </LinearLayout>
+
+</merge>

@@ -43,7 +43,7 @@ public abstract class FigTextViewBase extends CustomLinearLayout
 
   @Override
   public void init() {
-    setContentLayout(R.layout.fig_button);
+    setContentLayout(R.layout.fig_textview);
     mIcon = (ImageView) findViewById(R.id.icon);
     mLabel = (TextView) findViewById(R.id.label);
   }
