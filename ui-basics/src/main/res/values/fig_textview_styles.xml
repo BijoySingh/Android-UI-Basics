@@ -12,4 +12,15 @@
     <item name="textColor">@color/fig_textview_icon_text_color</item>
     <item name="iconTextGap">@dimen/fig_textview_icon_text_gap</item>
   </style>
+
+  <style name="FigLabelView_Medium"
+         parent="FigTextViewDefault">
+    <item name="android:gravity">center_horizontal</item>
+    <item name="iconSize">@dimen/fig_labelview_icon</item>
+    <item name="iconPadding">@dimen/fig_labelview_icon_padding</item>
+    <item name="iconTint">@color/fig_labelview_icon_tint</item>
+    <item name="textSize">@dimen/fig_labelview_text_size</item>
+    <item name="textColor">@color/fig_labelview_icon_text_color</item>
+    <item name="iconTextGap">@dimen/fig_labelview_icon_text_gap</item>
+  </style>
 </resources>

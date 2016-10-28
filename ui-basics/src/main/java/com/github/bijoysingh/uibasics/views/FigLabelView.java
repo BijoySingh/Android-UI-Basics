@@ -14,13 +14,13 @@ import com.github.bijoysingh.uibasics.base.FigTextViewBase;
  * Created by bijoy on 10/25/16.
  */
 
-public class FigTextView extends FigTextViewBase {
+public class FigLabelView extends FigTextViewBase {
 
-  public FigTextView(Context context) {
+  public FigLabelView(Context context) {
     super(context);
   }
 
-  public FigTextView(Context context, AttributeSet attrs) {
+  public FigLabelView(Context context, AttributeSet attrs) {
     super(context, attrs);
 
     new ImageAttributes.Builder()
@@ -31,7 +31,7 @@ public class FigTextView extends FigTextViewBase {
         .setIconSizeStyleable(R.styleable.FigTextViewBase_iconSize)
         .setIconPaddingStyleable(R.styleable.FigTextViewBase_iconPadding)
         .setIconTintStyleable(R.styleable.FigTextViewBase_iconTint)
-        .setIconMarginEndStyleable(R.styleable.FigTextViewBase_iconTextGap)
+        .setIconMarginBottomStyleable(R.styleable.FigTextViewBase_iconTextGap)
         .build()
         .set(mIcon);
 
@@ -48,18 +48,18 @@ public class FigTextView extends FigTextViewBase {
         .set(mLabel);
   }
 
-  public FigTextView(Context context, AttributeSet attrs, int defStyleAttr) {
+  public FigLabelView(Context context, AttributeSet attrs, int defStyleAttr) {
     super(context, attrs, defStyleAttr);
   }
 
   @TargetApi(21)
-  public FigTextView(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+  public FigLabelView(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
     super(context, attrs, defStyleAttr, defStyleRes);
   }
 
   @Override
   public void init() {
     super.init();
-    setOrientation(HORIZONTAL);
+    setOrientation(VERTICAL);
   }
 }

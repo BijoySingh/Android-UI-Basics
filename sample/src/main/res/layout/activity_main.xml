@@ -37,5 +37,15 @@
         fig:textStyle="@style/CustomFigTextView"
         />
 
+    <!-- FigLabelView samples -->
+
+    <com.github.bijoysingh.uibasics.views.FigLabelView
+        style="@style/FigLabelView_Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fig:src="@drawable/ic_android_white_48dp"
+        fig:text="@string/text_placeholder"
+        />
+
   </LinearLayout>
 </ScrollView>
