@@ -8,7 +8,7 @@
   <color name="light_primary_text">#DEFFFFFF</color>
   <color name="light_secondary_text">#DAFFFFFF</color>
   <color name="light_tertiary_text">#AAFFFFFF</color>
-  <color name="light_hint_text">#65FFFFFF</color>
+  <color name="canva_1_stemlight_hint_text">#65FFFFFF</color>
 
   <color name="transparent">#00000000</color>
   <color name="white">#FFFFFF</color>

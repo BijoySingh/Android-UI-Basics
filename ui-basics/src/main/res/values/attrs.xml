@@ -27,4 +27,12 @@
     <attr name="subtitlePadding" format="dimension"/>
     <attr name="subtitleStyle" format="reference"/>
   </declare-styleable>
+
+  <declare-styleable name="FigActionView">
+    <attr name="action" format="reference"/>
+    <attr name="actionPadding" format="dimension"/>
+    <attr name="actionSize" format="dimension"/>
+    <attr name="actionTint" format="color"/>
+    <attr name="actionTextGap" format="dimension"/>
+  </declare-styleable>
 </resources>

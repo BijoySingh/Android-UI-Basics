@@ -16,7 +16,7 @@ Color resources from the following sources
 <com.github.bijoysingh.uibasics.views.FigTextView
    android:layout_width="match_parent"
    android:layout_height="wrap_content"
-   android:background="#e1e1e1"
+   android:background="#f1f1f1"
    android:gravity="center_vertical"
    android:padding="16dp"
    fig:iconPadding="@dimen/fig_textview_icon_padding"
@@ -39,16 +39,16 @@ Color resources from the following sources
 <com.github.bijoysingh.uibasics.views.FigLabelView
    android:layout_width="wrap_content"
    android:layout_height="wrap_content"
-   android:background="@color/canva_1_stem"
    android:gravity="center"
    android:padding="16dp"
+   android:background="#f1f1f1"
    fig:iconPadding="@dimen/fig_labelview_icon_padding"
    fig:iconSize="48dp"
    fig:iconTextGap="@dimen/fig_labelview_icon_text_gap"
-   fig:iconTint="@color/light_hint_text"
+   fig:iconTint="@color/canva_1_stem"
    fig:icon="@drawable/ic_android_white_48dp"
    fig:text="@string/tiny_text_placeholder"
-   fig:textColor="@color/light_primary_text"
+   fig:textColor="@color/dark_primary_text"
    fig:textSize="18sp"
    fig:textStyle="@style/CustomFigLabelView"
    />
@@ -60,23 +60,52 @@ Color resources from the following sources
 ![FigTextView](readme/FigContentView.png)
 ```xml
 <com.github.bijoysingh.uibasics.views.FigContentView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:background="#e1e1e1"
-    android:gravity="center_vertical"
-    android:padding="16dp"
-    fig:icon="@drawable/ic_android_white_48dp"
-    fig:iconPadding="@dimen/fig_textview_icon_padding"
-    fig:iconSize="36dp"
-    fig:iconTextGap="16dp"
-    fig:iconTint="@color/canva_1_stem"
-    fig:title="@string/text_placeholder"
-    fig:titleColor="@color/dark_secondary_text"
-    fig:titleSize="16sp"
-    fig:titleStyle="@style/CustomFigContentViewTitle"
-    fig:subtitle="@string/big_text_placeholder"
-    fig:subtitleColor="@color/dark_tertiary_text"
-    fig:subtitleSize="14sp"
-    fig:subtitleStyle="@style/CustomFigContentViewSubtitle"
-    />
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:background="#f1f1f1"
+   android:gravity="center_vertical"
+   android:padding="16dp"
+   fig:icon="@drawable/ic_android_white_48dp"
+   fig:iconSize="36dp"
+   fig:iconTextGap="16dp"
+   fig:iconTint="@color/canva_1_stem"
+   fig:title="@string/text_placeholder"
+   fig:titleSize="16sp"
+   fig:titleColor="@color/dark_secondary_text"
+   fig:titleStyle="@style/CustomFigContentViewTitle"
+   fig:subtitle="@string/big_text_placeholder"
+   fig:subtitleSize="14sp"
+   fig:subtitleColor="@color/dark_tertiary_text"
+   fig:subtitleStyle="@style/CustomFigContentViewSubtitle"
+   />
+```
+
+### FigContentView
+`ImageView` next to a title `TextView` and a subtitle `TextView` and an action Button.
+
+![FigActionView](readme/FigActionView.png)
+```xml
+<com.github.bijoysingh.uibasics.views.FigActionView
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+   android:background="#f1f1f1"
+   android:gravity="center_vertical"
+   android:padding="16dp"
+   fig:icon="@drawable/ic_android_white_48dp"
+   fig:iconSize="36dp"
+   fig:iconTextGap="16dp"
+   fig:iconTint="@color/canva_1_stem"
+   fig:title="@string/text_placeholder"
+   fig:titleSize="16sp"
+   fig:titleColor="@color/dark_secondary_text"
+   fig:titleStyle="@style/CustomFigContentViewTitle"
+   fig:subtitle="@string/big_text_placeholder"
+   fig:subtitleSize="14sp"
+   fig:subtitleColor="@color/dark_tertiary_text"
+   fig:subtitleStyle="@style/CustomFigContentViewSubtitle"
+   fig:action="@drawable/ic_keyboard_arrow_right_white_24dp"
+   fig:actionSize="36dp"
+   fig:actionTextGap="16dp"
+   fig:actionTint="@color/dark_hint_text"
+   />
 ```
