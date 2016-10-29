@@ -61,7 +61,7 @@ public abstract class FigTextViewBase extends CustomLinearLayout
 
   @Override
   public void setImageBitmap(Bitmap bitmap) {
-    mIcon.setImageDrawable(new BitmapDrawable(getResources(), bitmap));
+    mIcon.setImageBitmap(bitmap);
   }
 
   @Override
