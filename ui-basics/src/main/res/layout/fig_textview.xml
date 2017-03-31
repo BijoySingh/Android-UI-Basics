@@ -7,7 +7,7 @@
       android:id="@+id/icon"
       android:layout_width="@dimen/default_icon"
       android:layout_height="@dimen/default_icon"
-      android:contentDescription="@string/fig_icon"
+      android:contentDescription="@string/ui_icon"
       />
 
   <TextView

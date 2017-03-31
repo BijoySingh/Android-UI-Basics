@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="fig_icon">Fig View Icon</string>
+  <string name="ui_icon">Ui View Icon</string>
 </resources>

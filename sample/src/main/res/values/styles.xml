@@ -17,19 +17,19 @@
     <item name="android:textStyle">bold</item>
   </style>
 
-  <style name="CustomFigTextView">
+  <style name="CustomUITextView">
   </style>
 
-  <style name="CustomFigLabelView">
+  <style name="CustomUILabelView">
     <item name="android:textStyle">bold</item>
     <item name="android:fontFamily">sans-serif-thin</item>
   </style>
 
-  <style name="CustomFigContentViewTitle">
+  <style name="CustomUIContentViewTitle">
     <item name="android:textColor">@color/dark_secondary_text</item>
   </style>
 
-  <style name="CustomFigContentViewSubtitle">
+  <style name="CustomUIContentViewSubtitle">
     <item name="android:textColor">@color/dark_tertiary_text</item>
   </style>
 

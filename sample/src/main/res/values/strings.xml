@@ -1,7 +1,7 @@
 <resources>
   <string name="app_name">uibasicssample</string>
-  <string name="figtextview_default">FigTextView (Default)</string>
-  <string name="figtextview_custom">FigTextView (Custom)</string>
+  <string name="uitextview_default">UITextView (Default)</string>
+  <string name="uitextview_custom">UITextView (Custom)</string>
 
   <string name="huge_text_placeholder">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed dapibus lectus. Aenean tempor accumsan massa ut pharetra. Pellentesque ac risus quam. Nunc faucibus lectus ut tellus tempus, eu elementum ex facilisis. Quisque commodo mollis lorem nec viverra. Nulla dolor urna, faucibus ac neque a, tristique feugiat diam. Duis vel sem sed lectus consectetur interdum. Etiam sagittis velit vel molestie pharetra. Phasellus id sem id leo pretium volutpat. Nullam a lacus eget lectus lacinia feugiat sed ac mauris. Donec lobortis ut eros sit amet mollis.</string>
   <string name="big_text_placeholder">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed dapibus lectus. Aenean tempor accumsan massa ut pharetra.</string>

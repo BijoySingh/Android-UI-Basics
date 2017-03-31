@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <declare-styleable name="FigTextViewBase">
+  <declare-styleable name="UITextViewBase">
     <attr name="text" format="string"/>
     <attr name="textColor" format="color"/>
     <attr name="textSize" format="dimension"/>
@@ -14,7 +14,7 @@
     <attr name="iconTextGap" format="dimension"/>
   </declare-styleable>
 
-  <declare-styleable name="FigContentView">
+  <declare-styleable name="UIContentView">
     <attr name="title" format="string"/>
     <attr name="titleColor" format="color"/>
     <attr name="titleSize" format="dimension"/>
@@ -28,7 +28,7 @@
     <attr name="subtitleStyle" format="reference"/>
   </declare-styleable>
 
-  <declare-styleable name="FigActionView">
+  <declare-styleable name="UIActionView">
     <attr name="action" format="reference"/>
     <attr name="actionPadding" format="dimension"/>
     <attr name="actionSize" format="dimension"/>

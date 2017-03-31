@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <style name="UITextViewDefault"></style>
+
+  <style name="UITextView_Medium"
+         parent="UITextViewDefault">
+    <item name="iconSize">@dimen/ui_textview_icon</item>
+    <item name="iconPadding">@dimen/ui_textview_icon_padding</item>
+    <item name="iconTint">@color/ui_textview_icon_tint</item>
+    <item name="textSize">@dimen/ui_textview_text_size</item>
+    <item name="textColor">@color/ui_textview_icon_text_color</item>
+    <item name="iconTextGap">@dimen/ui_textview_icon_text_gap</item>
+  </style>
+
+  <style name="UILabelView_Medium"
+         parent="UITextViewDefault">
+    <item name="android:gravity">center_horizontal</item>
+    <item name="iconSize">@dimen/ui_labelview_icon</item>
+    <item name="iconPadding">@dimen/ui_labelview_icon_padding</item>
+    <item name="iconTint">@color/ui_labelview_icon_tint</item>
+    <item name="textSize">@dimen/ui_labelview_text_size</item>
+    <item name="textColor">@color/ui_labelview_icon_text_color</item>
+    <item name="iconTextGap">@dimen/ui_labelview_icon_text_gap</item>
+  </style>
+</resources>

@@ -5,13 +5,13 @@
   <dimen name="default_padding">16dp</dimen>
   <dimen name="default_small_padding">8dp</dimen>
 
-  <dimen name="fig_textview_icon">36dp</dimen>
-  <dimen name="fig_textview_icon_padding">4dp</dimen>
-  <dimen name="fig_textview_text_size">16sp</dimen>
-  <dimen name="fig_textview_icon_text_gap">16dp</dimen>
+  <dimen name="ui_textview_icon">36dp</dimen>
+  <dimen name="ui_textview_icon_padding">4dp</dimen>
+  <dimen name="ui_textview_text_size">16sp</dimen>
+  <dimen name="ui_textview_icon_text_gap">16dp</dimen>
 
-  <dimen name="fig_labelview_icon">48dp</dimen>
-  <dimen name="fig_labelview_icon_padding">4dp</dimen>
-  <dimen name="fig_labelview_text_size">16sp</dimen>
-  <dimen name="fig_labelview_icon_text_gap">0dp</dimen>
+  <dimen name="ui_labelview_icon">48dp</dimen>
+  <dimen name="ui_labelview_icon_padding">4dp</dimen>
+  <dimen name="ui_labelview_text_size">16sp</dimen>
+  <dimen name="ui_labelview_icon_text_gap">0dp</dimen>
 </resources>

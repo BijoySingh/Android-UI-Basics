@@ -8,15 +8,15 @@
   <color name="light_primary_text">#DEFFFFFF</color>
   <color name="light_secondary_text">#DAFFFFFF</color>
   <color name="light_tertiary_text">#AAFFFFFF</color>
-  <color name="canva_1_stemlight_hint_text">#65FFFFFF</color>
+  <color name="light_hint_text">#65FFFFFF</color>
 
   <color name="transparent">#00000000</color>
   <color name="white">#FFFFFF</color>
   <color name="black">#000000</color>
 
-  <color name="fig_textview_icon_text_color">@color/dark_tertiary_text</color>
-  <color name="fig_textview_icon_tint">@color/dark_hint_text</color>
+  <color name="ui_textview_icon_text_color">@color/dark_tertiary_text</color>
+  <color name="ui_textview_icon_tint">@color/dark_hint_text</color>
 
-  <color name="fig_labelview_icon_text_color">@color/dark_tertiary_text</color>
-  <color name="fig_labelview_icon_tint">@color/dark_hint_text</color>
+  <color name="ui_labelview_icon_text_color">@color/dark_tertiary_text</color>
+  <color name="ui_labelview_icon_tint">@color/dark_hint_text</color>
 </resources>

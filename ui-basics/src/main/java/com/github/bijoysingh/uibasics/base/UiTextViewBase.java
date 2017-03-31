@@ -19,25 +19,25 @@ import com.github.bijoysingh.uibasics.setters.TextSetter;
  * Created by bijoy on 10/28/16.
  */
 
-public abstract class FigTextViewBase extends CustomLinearLayout
+public abstract class UITextViewBase extends CustomLinearLayout
     implements ImageSetter, TextSetter {
 
   protected ImageView mIcon;
   protected TextView mLabel;
 
-  public FigTextViewBase(Context context) {
+  public UITextViewBase(Context context) {
     super(context);
   }
 
-  public FigTextViewBase(Context context, AttributeSet attrs) {
+  public UITextViewBase(Context context, AttributeSet attrs) {
     super(context, attrs);
   }
 
-  public FigTextViewBase(Context context, AttributeSet attrs, int defStyleAttr) {
+  public UITextViewBase(Context context, AttributeSet attrs, int defStyleAttr) {
     super(context, attrs, defStyleAttr);
   }
 
-  public FigTextViewBase(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+  public UITextViewBase(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
     super(context, attrs, defStyleAttr, defStyleRes);
   }
 
@@ -104,5 +104,13 @@ public abstract class FigTextViewBase extends CustomLinearLayout
   @Override
   public void setTextPadding(int padding) {
     mLabel.setPadding(padding, padding, padding, padding);
+  }
+
+  public ImageView getIcon() {
+    return mIcon;
+  }
+
+  public TextView getLabel() {
+    return mLabel;
   }
 }
