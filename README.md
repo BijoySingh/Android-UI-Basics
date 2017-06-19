@@ -17,7 +17,7 @@ Color resources from the following sources
 ## Views
 Some common views are used in android. This library tries to abstract this logic for you.
 
-### FigTextView
+### UITextView
 `ImageView` on the left of the `TextView`, with a lot more control than using `drawableLeft/Start`.
 
 ![UITextView](readme/FigTextView.png)
@@ -28,9 +28,9 @@ Some common views are used in android. This library tries to abstract this logic
    android:background="@color/white"
    android:gravity="center_vertical"
    android:padding="16dp"
-   ui:iconPadding="@dimen/fig_textview_icon_padding"
+   ui:iconPadding="@dimen/ui_textview_icon_padding"
    ui:iconSize="48dp"
-   ui:iconTextGap="@dimen/fig_textview_icon_text_gap"
+   ui:iconTextGap="@dimen/ui_textview_icon_text_gap"
    ui:iconTint="@color/dark_hint_text"
    ui:icon="@drawable/ic_android_white_48dp"
    ui:text="@string/big_text_placeholder"
@@ -40,7 +40,7 @@ Some common views are used in android. This library tries to abstract this logic
    />
 ```
 
-### FigLabelView
+### UILabelView
 `ImageView` on below the `TextView`, lot cleaner than putting LinearLayouts for this.
 
 ![UILabelView](readme/FigLabelView.png)
@@ -51,9 +51,9 @@ Some common views are used in android. This library tries to abstract this logic
    android:gravity="center"
    android:padding="16dp"
    android:background="@color/white"
-   ui:iconPadding="@dimen/fig_labelview_icon_padding"
+   ui:iconPadding="@dimen/ui_labelview_icon_padding"
    ui:iconSize="48dp"
-   ui:iconTextGap="@dimen/fig_labelview_icon_text_gap"
+   ui:iconTextGap="@dimen/ui_labelview_icon_text_gap"
    ui:iconTint="@color/canva_1_stem"
    ui:icon="@drawable/ic_android_white_48dp"
    ui:text="@string/tiny_text_placeholder"
@@ -63,7 +63,7 @@ Some common views are used in android. This library tries to abstract this logic
    />
 ```
 
-### FigContentView
+### UIContentView
 `ImageView` next to a title `TextView` and a subtitle `TextView`.
 
 ![UIContentView](readme/FigContentView.png)
@@ -89,7 +89,7 @@ Some common views are used in android. This library tries to abstract this logic
    />
 ```
 
-### FigActionView
+### UIActionView
 `ImageView` next to a title `TextView` and a subtitle `TextView` and an action Button.
 
 ![UIActionView](readme/FigActionView.png)
