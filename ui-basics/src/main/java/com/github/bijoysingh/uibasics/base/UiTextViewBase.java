@@ -7,6 +7,7 @@ import android.graphics.drawable.Drawable;
 import android.support.annotation.DrawableRes;
 import android.support.annotation.StringRes;
 import android.util.AttributeSet;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -52,16 +53,19 @@ public abstract class UITextViewBase extends CustomLinearLayout
   @Override
   public void setImageResource(@DrawableRes Integer imageResource) {
     mIcon.setImageResource(imageResource);
+    mIcon.setVisibility(View.VISIBLE);
   }
 
   @Override
   public void setImageDrawable(Drawable imageDrawable) {
     mIcon.setImageDrawable(imageDrawable);
+    mIcon.setVisibility(View.VISIBLE);
   }
 
   @Override
   public void setImageBitmap(Bitmap bitmap) {
     mIcon.setImageBitmap(bitmap);
+    mIcon.setVisibility(View.VISIBLE);
   }
 
   @Override

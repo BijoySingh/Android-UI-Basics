@@ -6,6 +6,7 @@ import android.graphics.drawable.Drawable;
 import android.support.annotation.DrawableRes;
 import android.support.annotation.StringRes;
 import android.util.AttributeSet;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -109,16 +110,19 @@ public class UIActionView extends CustomLinearLayout
   @Override
   public void setActionResource(@DrawableRes Integer imageResource) {
     mAction.setImageResource(imageResource);
+    mAction.setVisibility(View.VISIBLE);
   }
 
   @Override
   public void setActionDrawable(Drawable imageDrawable) {
     mAction.setImageDrawable(imageDrawable);
+    mAction.setVisibility(View.VISIBLE);
   }
 
   @Override
   public void setActionBitmap(Bitmap bitmap) {
     mAction.setImageBitmap(bitmap);
+    mAction.setVisibility(View.VISIBLE);
   }
 
   @Override
@@ -196,16 +200,19 @@ public class UIActionView extends CustomLinearLayout
   @Override
   public void setImageResource(@DrawableRes Integer imageResource) {
     mIcon.setImageResource(imageResource);
+    mIcon.setVisibility(View.VISIBLE);
   }
 
   @Override
   public void setImageDrawable(Drawable imageDrawable) {
     mIcon.setImageDrawable(imageDrawable);
+    mIcon.setVisibility(View.VISIBLE);
   }
 
   @Override
   public void setImageBitmap(Bitmap bitmap) {
     mIcon.setImageBitmap(bitmap);
+    mIcon.setVisibility(View.VISIBLE);
   }
 
   @Override

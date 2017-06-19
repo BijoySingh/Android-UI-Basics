@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Color;
 import android.util.AttributeSet;
+import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
@@ -56,6 +57,8 @@ public class ImageAttributes {
         int imageSrc = typedArray.getResourceId(srcStyleable, 0);
         if (imageSrc != 0) {
           view.setImageResource(imageSrc);
+        } else {
+          view.setVisibility(View.GONE);
         }
       }
 

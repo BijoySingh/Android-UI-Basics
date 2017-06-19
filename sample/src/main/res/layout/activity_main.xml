@@ -16,7 +16,7 @@
     <com.github.bijoysingh.uibasics.views.UITextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#f1f1f1"
+        android:background="@color/white"
         android:gravity="center_vertical"
         android:padding="16dp"
         ui:iconPadding="@dimen/ui_textview_icon_padding"
@@ -37,7 +37,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:padding="16dp"
-        android:background="#f1f1f1"
+        android:background="@color/white"
         ui:iconPadding="@dimen/ui_labelview_icon_padding"
         ui:iconSize="48dp"
         ui:iconTextGap="@dimen/ui_labelview_icon_text_gap"
@@ -54,7 +54,7 @@
     <com.github.bijoysingh.uibasics.views.UIContentView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#f1f1f1"
+        android:background="@color/white"
         android:gravity="center_vertical"
         android:padding="16dp"
         ui:icon="@drawable/ic_android_white_48dp"
@@ -76,7 +76,7 @@
     <com.github.bijoysingh.uibasics.views.UIActionView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#f1f1f1"
+        android:background="@color/white"
         android:gravity="center_vertical"
         android:padding="16dp"
         ui:icon="@drawable/ic_android_white_48dp"
@@ -95,6 +95,24 @@
         ui:actionSize="36dp"
         ui:actionTextGap="16dp"
         ui:actionTint="@color/dark_hint_text"
+        />
+
+    <include layout="@layout/seperator"/>
+
+    <com.github.bijoysingh.uibasics.views.UIContentView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        ui:title="@string/text_placeholder"
+        ui:titleSize="16sp"
+        ui:titleColor="@color/dark_secondary_text"
+        ui:titleStyle="@style/CustomUIContentViewTitle"
+        ui:subtitle="@string/big_text_placeholder"
+        ui:subtitleSize="14sp"
+        ui:subtitleColor="@color/dark_tertiary_text"
+        ui:subtitleStyle="@style/CustomUIContentViewSubtitle"
         />
 
     <include layout="@layout/seperator"/>

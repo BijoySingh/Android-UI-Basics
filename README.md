@@ -5,7 +5,7 @@ This library also contains a set of colors which are useful in design.
 ## Installation (Usage)
 ```gradle
 
-compile 'com.github.bijoysingh:ui-basics:0.0.13'
+compile 'com.github.bijoysingh:ui-basics:0.1'
 
 ```
 
@@ -15,15 +15,17 @@ Color resources from the following sources
 - https://material.google.com/style/color.html/
 
 ## Views
+Some common views are used in android. This library tries to abstract this logic for you.
+
 ### FigTextView
 `ImageView` on the left of the `TextView`, with a lot more control than using `drawableLeft/Start`.
 
-![FigTextView](readme/FigTextView.png)
+![UITextView](readme/FigTextView.png)
 ```xml
-<com.github.bijoysingh.uibasics.views.FigTextView
+<com.github.bijoysingh.uibasics.views.UITextView
    android:layout_width="match_parent"
    android:layout_height="wrap_content"
-   android:background="#f1f1f1"
+   android:background="@color/white"
    android:gravity="center_vertical"
    android:padding="16dp"
    ui:iconPadding="@dimen/fig_textview_icon_padding"
@@ -34,21 +36,21 @@ Color resources from the following sources
    ui:text="@string/big_text_placeholder"
    ui:textColor="@color/dark_tertiary_text"
    ui:textSize="16sp"
-   ui:textStyle="@style/CustomFigTextView"
+   ui:textStyle="@style/CustomUITextView"
    />
 ```
 
 ### FigLabelView
 `ImageView` on below the `TextView`, lot cleaner than putting LinearLayouts for this.
 
-![FigTextView](readme/FigLabelView.png)
+![UILabelView](readme/FigLabelView.png)
 ```xml
 <com.github.bijoysingh.uibasics.views.UILabelView
    android:layout_width="wrap_content"
    android:layout_height="wrap_content"
    android:gravity="center"
    android:padding="16dp"
-   android:background="#f1f1f1"
+   android:background="@color/white"
    ui:iconPadding="@dimen/fig_labelview_icon_padding"
    ui:iconSize="48dp"
    ui:iconTextGap="@dimen/fig_labelview_icon_text_gap"
@@ -57,19 +59,19 @@ Color resources from the following sources
    ui:text="@string/tiny_text_placeholder"
    ui:textColor="@color/dark_primary_text"
    ui:textSize="18sp"
-   ui:textStyle="@style/CustomFigLabelView"
+   ui:textStyle="@style/CustomUILabelView"
    />
 ```
 
 ### FigContentView
 `ImageView` next to a title `TextView` and a subtitle `TextView`.
 
-![FigTextView](readme/FigContentView.png)
+![UIContentView](readme/FigContentView.png)
 ```xml
 <com.github.bijoysingh.uibasics.views.UIContentView
    android:layout_width="wrap_content"
    android:layout_height="wrap_content"
-   android:background="#f1f1f1"
+   android:background="@color/white"
    android:gravity="center_vertical"
    android:padding="16dp"
    ui:icon="@drawable/ic_android_white_48dp"
@@ -79,23 +81,23 @@ Color resources from the following sources
    ui:title="@string/text_placeholder"
    ui:titleSize="16sp"
    ui:titleColor="@color/dark_secondary_text"
-   ui:titleStyle="@style/CustomFigContentViewTitle"
+   ui:titleStyle="@style/CustomUIContentViewTitle"
    ui:subtitle="@string/big_text_placeholder"
    ui:subtitleSize="14sp"
    ui:subtitleColor="@color/dark_tertiary_text"
-   ui:subtitleStyle="@style/CustomFigContentViewSubtitle"
+   ui:subtitleStyle="@style/CustomUIContentViewSubtitle"
    />
 ```
 
-### FigContentView
+### FigActionView
 `ImageView` next to a title `TextView` and a subtitle `TextView` and an action Button.
 
-![FigActionView](readme/FigActionView.png)
+![UIActionView](readme/FigActionView.png)
 ```xml
 <com.github.bijoysingh.uibasics.views.UIActionView
    android:layout_width="match_parent"
    android:layout_height="wrap_content"
-   android:background="#f1f1f1"
+   android:background="@color/white"
    android:gravity="center_vertical"
    android:padding="16dp"
    ui:icon="@drawable/ic_android_white_48dp"
@@ -105,14 +107,35 @@ Color resources from the following sources
    ui:title="@string/text_placeholder"
    ui:titleSize="16sp"
    ui:titleColor="@color/dark_secondary_text"
-   ui:titleStyle="@style/CustomFigContentViewTitle"
+   ui:titleStyle="@style/CustomUIContentViewTitle"
    ui:subtitle="@string/big_text_placeholder"
    ui:subtitleSize="14sp"
    ui:subtitleColor="@color/dark_tertiary_text"
-   ui:subtitleStyle="@style/CustomFigContentViewSubtitle"
+   ui:subtitleStyle="@style/CustomUIContentViewSubtitle"
    ui:action="@drawable/ic_keyboard_arrow_right_white_24dp"
    ui:actionSize="36dp"
    ui:actionTextGap="16dp"
    ui:actionTint="@color/dark_hint_text"
+   />
+```
+
+If you don't specify an icon, it will automatically be hidden. So you can create a title-subtitle view with a `UIContentView` as well
+
+![No Icon UI Content View](readme/FigContentViewNoIcon.png)
+```xml
+<com.github.bijoysingh.uibasics.views.UIContentView
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+   android:background="@color/white"
+   android:gravity="center_vertical"
+   android:padding="16dp"
+   ui:title="@string/text_placeholder"
+   ui:titleSize="16sp"
+   ui:titleColor="@color/dark_secondary_text"
+   ui:titleStyle="@style/CustomUIContentViewTitle"
+   ui:subtitle="@string/big_text_placeholder"
+   ui:subtitleSize="14sp"
+   ui:subtitleColor="@color/dark_tertiary_text"
+   ui:subtitleStyle="@style/CustomUIContentViewSubtitle"
    />
 ```
