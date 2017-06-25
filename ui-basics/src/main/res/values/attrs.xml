@@ -2,10 +2,12 @@
 <resources>
   <declare-styleable name="UITextViewBase">
     <attr name="text" format="string"/>
+    <attr name="textAllCaps" format="reference|boolean"/>
     <attr name="textColor" format="color"/>
     <attr name="textSize" format="dimension"/>
     <attr name="textPadding" format="dimension"/>
     <attr name="textStyle" format="reference"/>
+    <attr name="textMaxLines" format="integer"/>
 
     <attr name="icon" format="reference"/>
     <attr name="iconPadding" format="dimension"/>
@@ -16,16 +18,20 @@
 
   <declare-styleable name="UIContentView">
     <attr name="title" format="string"/>
+    <attr name="titleAllCaps" format="reference|boolean"/>
     <attr name="titleColor" format="color"/>
     <attr name="titleSize" format="dimension"/>
     <attr name="titlePadding" format="dimension"/>
     <attr name="titleStyle" format="reference"/>
+    <attr name="titleMaxLines" format="integer"/>
 
     <attr name="subtitle" format="string"/>
+    <attr name="subtitleAllCaps" format="reference|boolean"/>
     <attr name="subtitleColor" format="color"/>
     <attr name="subtitleSize" format="dimension"/>
     <attr name="subtitlePadding" format="dimension"/>
     <attr name="subtitleStyle" format="reference"/>
+    <attr name="subtitleMaxLines" format="integer"/>
   </declare-styleable>
 
   <declare-styleable name="UIActionView">

@@ -17,4 +17,8 @@ public interface TextSetter {
   void setTextSize(float size);
 
   void setTextPadding(int padding);
+
+  void setTextAllCaps(boolean textAllCaps);
+
+  void setTextMaxLines(int maxLines);
 }

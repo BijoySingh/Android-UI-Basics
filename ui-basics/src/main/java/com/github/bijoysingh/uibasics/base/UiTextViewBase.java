@@ -2,7 +2,6 @@ package com.github.bijoysingh.uibasics.base;
 
 import android.content.Context;
 import android.graphics.Bitmap;
-import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.support.annotation.DrawableRes;
 import android.support.annotation.StringRes;
@@ -108,6 +107,16 @@ public abstract class UITextViewBase extends CustomLinearLayout
   @Override
   public void setTextPadding(int padding) {
     mLabel.setPadding(padding, padding, padding, padding);
+  }
+
+  @Override
+  public void setTextAllCaps(boolean textAllCaps) {
+    mLabel.setAllCaps(textAllCaps);
+  }
+
+  @Override
+  public void setTextMaxLines(int maxLines) {
+    mLabel.setMaxLines(maxLines);
   }
 
   public ImageView getIcon() {

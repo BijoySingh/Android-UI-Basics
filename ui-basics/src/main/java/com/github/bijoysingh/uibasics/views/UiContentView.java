@@ -57,6 +57,8 @@ public class UIContentView extends CustomLinearLayout
         .setTextSizeStyleable(R.styleable.UIContentView_titleSize)
         .setTextStyleStyleable(R.styleable.UIContentView_titleStyle)
         .setTextPaddingStyleable(R.styleable.UIContentView_titlePadding)
+        .setTextAllCapsStyleable(R.styleable.UIContentView_titleAllCaps)
+        .setTextMaxLinesStyleable(R.styleable.UIContentView_titleMaxLines)
         .build()
         .set(mTitle);
 
@@ -69,6 +71,8 @@ public class UIContentView extends CustomLinearLayout
         .setTextSizeStyleable(R.styleable.UIContentView_subtitleSize)
         .setTextStyleStyleable(R.styleable.UIContentView_subtitleStyle)
         .setTextPaddingStyleable(R.styleable.UIContentView_subtitlePadding)
+        .setTextAllCapsStyleable(R.styleable.UIContentView_subtitleAllCaps)
+        .setTextMaxLinesStyleable(R.styleable.UIContentView_subtitleMaxLines)
         .build()
         .set(mSubtitle);
   }

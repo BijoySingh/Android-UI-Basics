@@ -30,6 +30,8 @@ public class TextAttributes {
   private int textMarginEndStyleable;
   private int textMarginTopStyleable;
   private int textMarginBottomStyleable;
+  private int textMaxLinesStyleable;
+  private int textAllCapsStyleable;
 
   public TextAttributes(Builder builder) {
     context = builder.context;
@@ -45,6 +47,8 @@ public class TextAttributes {
     textMarginEndStyleable = builder.textMarginEndStyleable;
     textMarginTopStyleable = builder.textMarginTopStyleable;
     textMarginBottomStyleable = builder.textMarginBottomStyleable;
+    textMaxLinesStyleable = builder.textMaxLinesStyleable;
+    textAllCapsStyleable = builder.textAllCapsStyleable;
   }
 
   public void set(TextView view) {
@@ -107,6 +111,18 @@ public class TextAttributes {
       ViewGroup.MarginLayoutParams params = (ViewGroup.MarginLayoutParams) view.getLayoutParams();
       params.setMargins(marginStart, marginTop, marginEnd, marginBottom);
 
+      if (textMaxLinesStyleable != -1) {
+        int count = typedArray.getInteger(textMaxLinesStyleable, -1);
+        if (count >= 0) {
+          view.setMaxLines(count);
+        }
+      }
+
+      if (textAllCapsStyleable != -1) {
+        boolean allCaps = typedArray.getBoolean(textAllCapsStyleable, false);
+        view.setAllCaps(allCaps);
+      }
+
     } finally {
       typedArray.recycle();
     }
@@ -126,6 +142,8 @@ public class TextAttributes {
     private int textMarginEndStyleable = -1;
     private int textMarginTopStyleable = -1;
     private int textMarginBottomStyleable = -1;
+    private int textMaxLinesStyleable = -1;
+    private int textAllCapsStyleable = -1;
 
     public Builder setContext(Context context) {
       this.context = context;
@@ -189,6 +207,16 @@ public class TextAttributes {
 
     public Builder setTextMarginStartStyleable(int textMarginStartStyleable) {
       this.textMarginStartStyleable = textMarginStartStyleable;
+      return this;
+    }
+
+    public Builder setTextMaxLinesStyleable(int textMaxLinesStyleable) {
+      this.textMaxLinesStyleable = textMaxLinesStyleable;
+      return this;
+    }
+
+    public Builder setTextAllCapsStyleable(int textAllCapsStyleable) {
+      this.textAllCapsStyleable = textAllCapsStyleable;
       return this;
     }
 

@@ -44,6 +44,8 @@ public class UILabelView extends UITextViewBase {
         .setTextSizeStyleable(R.styleable.UITextViewBase_textSize)
         .setTextStyleStyleable(R.styleable.UITextViewBase_textStyle)
         .setTextPaddingStyleable(R.styleable.UITextViewBase_textPadding)
+        .setTextAllCapsStyleable(R.styleable.UITextViewBase_textAllCaps)
+        .setTextMaxLinesStyleable(R.styleable.UITextViewBase_textMaxLines)
         .build()
         .set(mLabel);
   }
