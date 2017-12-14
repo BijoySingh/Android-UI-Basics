@@ -22,6 +22,7 @@
 
   <style name="CustomUILabelView">
     <item name="android:textStyle">bold</item>
+    <item name="android:gravity">center</item>
     <item name="android:fontFamily">sans-serif-thin</item>
   </style>
 

@@ -2,6 +2,7 @@
 <resources>
   <declare-styleable name="UITextViewBase">
     <attr name="text" format="string"/>
+    <attr name="textWidth" format="dimension"/>
     <attr name="textAllCaps" format="reference|boolean"/>
     <attr name="textColor" format="color"/>
     <attr name="textSize" format="dimension"/>

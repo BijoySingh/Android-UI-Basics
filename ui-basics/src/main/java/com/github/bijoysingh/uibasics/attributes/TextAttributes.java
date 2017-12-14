@@ -22,6 +22,7 @@ public class TextAttributes {
   private int[] attrStyleable;
   private int textStyleable;
   private int textSizeStyleable;
+  private int textWidthStyleable;
   private int textColorStyleable;
   private int textStyleStyleable;
   private int textPaddingStyleable;
@@ -40,6 +41,7 @@ public class TextAttributes {
     textStyleable = builder.textStyleable;
     textColorStyleable = builder.textColorStyleable;
     textSizeStyleable = builder.textSizeStyleable;
+    textWidthStyleable = builder.textWidthStyleable;
     textStyleStyleable = builder.textStyleStyleable;
     textPaddingStyleable = builder.textPaddingStyleable;
     textMarginStyleable = builder.textMarginStyleable;
@@ -79,6 +81,12 @@ public class TextAttributes {
         view.setTextSize(TypedValue.COMPLEX_UNIT_PX, typedArray.getDimension(
             textSizeStyleable,
             context.getResources().getDimension(R.dimen.default_text_size)));
+      }
+
+      if (textWidthStyleable != -1) {
+        // Set the text view width of the text
+        view.getLayoutParams().width = (int) typedArray.getDimension(textWidthStyleable,
+            context.getResources().getDimension(R.dimen.default_text_width));
       }
 
       if (textColorStyleable != -1) {
@@ -132,6 +140,7 @@ public class TextAttributes {
     private Context context;
     private AttributeSet attributeSet;
     private int[] attrStyleable;
+    private int textWidthStyleable = -1;
     private int textStyleable = -1;
     private int textSizeStyleable = -1;
     private int textColorStyleable = -1;
@@ -167,6 +176,11 @@ public class TextAttributes {
 
     public Builder setTextSizeStyleable(int textSizeStyleable) {
       this.textSizeStyleable = textSizeStyleable;
+      return this;
+    }
+
+    public Builder setTextWidthStyleable(int textWidthStyleable) {
+      this.textWidthStyleable = textWidthStyleable;
       return this;
     }
 

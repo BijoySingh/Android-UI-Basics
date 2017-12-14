@@ -49,6 +49,26 @@
         ui:textStyle="@style/CustomUILabelView"
         />
 
+
+    <com.github.bijoysingh.uibasics.views.UILabelView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:padding="16dp"
+      android:background="@color/white"
+      ui:iconPadding="@dimen/ui_labelview_icon_padding"
+      ui:iconSize="48dp"
+      ui:iconTextGap="@dimen/ui_labelview_icon_text_gap"
+      ui:iconTint="@color/stem"
+      ui:icon="@drawable/ic_android_white_48dp"
+      ui:text="@string/text_placeholder"
+      ui:textWidth="64dp"
+      ui:textColor="@color/dark_primary_text"
+      ui:textSize="18sp"
+      ui:textMaxLines="2"
+      ui:textStyle="@style/CustomUILabelView"
+      />
+
     <include layout="@layout/seperator"/>
 
     <com.github.bijoysingh.uibasics.views.UIContentView
