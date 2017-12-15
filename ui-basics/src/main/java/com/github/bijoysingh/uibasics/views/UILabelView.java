@@ -43,6 +43,8 @@ public class UILabelView extends UITextViewBase {
         .setTextColorStyleable(R.styleable.UITextViewBase_textColor)
         .setTextSizeStyleable(R.styleable.UITextViewBase_textSize)
         .setTextWidthStyleable(R.styleable.UITextViewBase_textWidth)
+        .setTextGravityStyleable(R.styleable.UITextViewBase_textGravity)
+        .setTextLinesStyleable(R.styleable.UITextViewBase_textLines)
         .setTextStyleStyleable(R.styleable.UITextViewBase_textStyle)
         .setTextPaddingStyleable(R.styleable.UITextViewBase_textPadding)
         .setTextAllCapsStyleable(R.styleable.UITextViewBase_textAllCaps)

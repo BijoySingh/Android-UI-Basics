@@ -6,6 +6,7 @@ import android.graphics.Color;
 import android.os.Build;
 import android.util.AttributeSet;
 import android.util.TypedValue;
+import android.view.Gravity;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
@@ -25,6 +26,8 @@ public class TextAttributes {
   private int textWidthStyleable;
   private int textColorStyleable;
   private int textStyleStyleable;
+  private int textGravityStyleable;
+  private int textLinesStyleable;
   private int textPaddingStyleable;
   private int textMarginStyleable;
   private int textMarginStartStyleable;
@@ -42,6 +45,8 @@ public class TextAttributes {
     textColorStyleable = builder.textColorStyleable;
     textSizeStyleable = builder.textSizeStyleable;
     textWidthStyleable = builder.textWidthStyleable;
+    textGravityStyleable = builder.textGravityStyleable;
+    textLinesStyleable = builder.textLinesStyleable;
     textStyleStyleable = builder.textStyleStyleable;
     textPaddingStyleable = builder.textPaddingStyleable;
     textMarginStyleable = builder.textMarginStyleable;
@@ -94,6 +99,18 @@ public class TextAttributes {
         view.setTextColor(typedArray.getColor(textColorStyleable, Color.BLACK));
       }
 
+      if (textLinesStyleable != -1) {
+        int count = typedArray.getInteger(textLinesStyleable, -1);
+        if (count >= 0) {
+          view.setLines(count);
+        }
+      }
+
+      if (textGravityStyleable != -1) {
+        int gravity = typedArray.getInteger(textGravityStyleable, Gravity.NO_GRAVITY);
+        view.setGravity(gravity);
+      }
+
       if (textPaddingStyleable != -1) {
         // Set the text padding
         int padding = (int) typedArray.getDimension(textPaddingStyleable, 0);
@@ -144,6 +161,8 @@ public class TextAttributes {
     private int textStyleable = -1;
     private int textSizeStyleable = -1;
     private int textColorStyleable = -1;
+    private int textLinesStyleable = -1;
+    private int textGravityStyleable = -1;
     private int textStyleStyleable = -1;
     private int textPaddingStyleable = -1;
     private int textMarginStyleable = -1;
@@ -181,6 +200,16 @@ public class TextAttributes {
 
     public Builder setTextWidthStyleable(int textWidthStyleable) {
       this.textWidthStyleable = textWidthStyleable;
+      return this;
+    }
+
+    public Builder setTextGravityStyleable(int textGravityStyleable) {
+      this.textGravityStyleable = textGravityStyleable;
+      return this;
+    }
+
+    public Builder setTextLinesStyleable(int textLinesStyleable) {
+      this.textLinesStyleable = textLinesStyleable;
       return this;
     }
 

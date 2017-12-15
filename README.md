@@ -5,7 +5,7 @@ This library also contains a set of colors which are useful in design.
 ## Installation (Usage)
 ```gradle
 
-compile 'com.github.bijoysingh:ui-basics:0.3.0'
+compile 'com.github.bijoysingh:ui-basics:0.4.0'
 
 ```
 
