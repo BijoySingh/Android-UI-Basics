@@ -12,6 +12,9 @@ import android.widget.TextView;
 
 import com.github.bijoysingh.uibasics.R;
 
+import static android.view.ViewGroup.LayoutParams.MATCH_PARENT;
+import static android.view.ViewGroup.LayoutParams.WRAP_CONTENT;
+
 /**
  * Text Attributes handling
  * Created by bijoy on 10/27/16.
@@ -90,8 +93,7 @@ public class TextAttributes {
 
       if (textWidthStyleable != -1) {
         // Set the text view width of the text
-        view.getLayoutParams().width = (int) typedArray.getDimension(textWidthStyleable,
-            context.getResources().getDimension(R.dimen.default_text_width));
+        view.getLayoutParams().width = (int) typedArray.getDimension(textWidthStyleable, WRAP_CONTENT);
       }
 
       if (textColorStyleable != -1) {
