@@ -236,4 +236,19 @@ public class UIActionView extends CustomLinearLayout
     requestLayout();
   }
 
+  public ImageView getIcon() {
+    return mIcon;
+  }
+
+  public TextView getTitle() {
+    return mTitle;
+  }
+
+  public TextView getSubtitle() {
+    return mSubtitle;
+  }
+
+  public ImageView getAction() {
+    return mAction;
+  }
 }

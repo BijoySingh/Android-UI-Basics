@@ -180,4 +180,16 @@ public class UIContentView extends CustomLinearLayout
     requestLayout();
   }
 
+  public ImageView getIcon() {
+    return mIcon;
+  }
+
+  public TextView getTitle() {
+    return mTitle;
+  }
+
+  public TextView getSubtitle() {
+    return mSubtitle;
+  }
+
 }
