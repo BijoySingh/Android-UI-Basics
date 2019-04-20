@@ -5,10 +5,13 @@ This library also contains a set of colors which are useful in design.
 ## Installation (Usage)
 ```gradle
 
-compile 'com.github.bijoysingh:ui-basics:0.5.0'
+compile 'com.github.bijoysingh:ui-basics:1.0.0-x'
 
 ```
 
+// compile 'com.github.bijoysingh:ui-basics:1.0.0-x' for AndroidX
+// compile 'com.github.bijoysingh:ui-basics:0.7.0' for Android v28
+// compile 'com.github.bijoysingh:ui-basics:0.5.0' for Android v27
 // compile 'com.github.bijoysingh:ui-basics:0.4.1' for Android v26
 
 ## Colors

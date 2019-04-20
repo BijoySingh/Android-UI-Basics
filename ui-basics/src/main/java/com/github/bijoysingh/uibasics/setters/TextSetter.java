@@ -1,6 +1,6 @@
 package com.github.bijoysingh.uibasics.setters;
 
-import android.support.annotation.StringRes;
+import androidx.annotation.StringRes;
 
 /**
  * Text Setter
